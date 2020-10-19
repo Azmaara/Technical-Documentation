@@ -1,0 +1,203 @@
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="Farhan N Ahmad">
+    <title>Technical Documentation</title>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"  type="text/javascript"></script>
+</head>
+    <body>
+<div class="container">
+  <nav id="navbar">
+    <header>
+      <a href="#" id="top-header">Menu</a>
+    </header>
+    <ul class="doc-list">
+      <li class="doc-list-item"><a href="#jQuery_Author" class="nav-link">Author</a></li>
+      <li class="doc-list-item"><a href="#jQuery_Introduction" class="nav-link">Introduction</a></li>
+      <li class="doc-list-item"><a href="#What_is_jQuery" class="nav-link">What is jquery ?</a></li>
+      <li class="doc-list-item"><a href="#Why_jQuery" class="nav-link">When to use jquery?</a></li>
+      <li class="doc-list-item"><a href="#jQuery_Effects_Reference" class="nav-link">jQuery Effects Reference</a></li>
+      <li class="doc-list-item"><a href="#jQuery_HTML_Reference" class="nav-link">jQuery HTML Reference</a></li>
+    </ul>
+  </nav>
+  <!--User Story #1-->
+  <main id="main-doc">
+     <!--User Story #2-->
+     <!--User Story #4-->
+     <section class="main-section" id="jQuery_Author">
+      <header>Author</header>
+      <div class="header-info">
+        <ol>
+          <li>John Resig</li>
+          <p>jQuery is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax. It is free, open-source software using the permissive MIT License. As of May 2019, jQuery is used by 73% of the 10 million most popular websites. ~Wikipedia</p>
+        </ol>
+     
+        <!--User Story #6-->
+     
+      </div>
+    </section>
+
+
+    <section class="main-section" id="jQuery_Introduction">
+      <header>Introduction</header>
+      <div class="header-info">
+        <ol>
+          <li>jquery is a JavaScript Library</li>
+         <li>jquery greatly simplifies JavaScript programming.</li>
+         <li>jquery is easy to learn.</li>
+        </ol>
+        <h3>Examples in Every Chapter</h3>
+        <p>With our online editor, you can edit the code, and click on a button to view the result.</p>
+        <!--User Story #6-->
+        <code>
+          <pre>
+            $(document).ready(function() {
+
+              $("p").click(function() {
+                $(this).hide();
+              });
+
+            });
+        </pre>
+        </code>
+      </div>
+    </section>
+     <!--User Story #2-->
+     <!--User Story #4-->
+    <section class="main-section" id="What_is_jQuery">
+      <header>What is jquery?</header>
+        <div class="what-is-jquery">
+             <!--User Story #5-->
+          <p>jquery is a lightweight, "write less, do more", JavaScript library.</p>
+          <p>The purpose of jQuery is to make it much easier to use JavaScript on your website.</p>
+          <p>jQuery takes a lot of common tasks that require many lines of JavaScript code to accomplish, and wraps them into methods that you can call with a single line of code.</p>
+          <p>jQuery also simplifies a lot of the complicated things from JavaScript, like AJAX calls and DOM manipulation.</p>
+          <p>The jQuery library contains the following features:</p>
+          <ul>
+            <li>HTML/DOM manipulation</li>
+            <li>CSS manipulation</li>
+            <li>HTML event methods</li>
+            <li>Effects and animations</li>
+            <li>AJAX</li>
+            <li>Utilities</li>
+          </ul>
+        </div>
+    </section>
+     <!--User Story #2-->
+     <!--User Story #4-->
+    <section class="main-section" id="Why_jQuery">
+    <!--User Story #3-->
+      <header>When to use jquery?</header>
+      <div class="Why_jQuery">
+           <!--User Story #5-->
+        <p>There are lots of other JavaScript frameworks out there, but jQuery seems to be the most popular, and also the most extendable.</p>
+        <p>Many of the biggest companies on the Web use jQuery, such as:</p>
+        <ul>
+          <li>Google</li>
+          <li>Microsoft</li>
+          <li>IBM</li>
+          <li>Netflix</li>
+        </ul>
+      </div>
+    </section>
+     <!--User Story #2-->
+     <!--User Story #4-->
+    <section class="main-section" id="jQuery_Effects_Reference">
+      <header>jQuery Effects Reference</header>
+      <div class="jQuery_Effects_Reference">
+           <!--User Story #5-->
+        <p>Hide, Show, Toggle, Slide, Fade, and Animate. WOW!</p>
+        <p>Demonstrates a simple jQuery hide() method.</p>
+        <p>Another hide() demonstration. How to hide parts of text.</p>
+        <h3>jQuery hide()</h3>
+        <p>With jQuery, you can hide and show HTML elements with the hide() methods:</p>
+         <!--User Story #6-->
+        <code>
+          <pre>
+            $("#hide").click(function(){
+            
+              $("p").hide();
+              
+            });
+        </pre>
+        </code>
+        <h3>jquery show()</h3>
+        <p>With jquery, you can hide and show HTML elements with the show() methods:</p>
+         <!--User Story #6-->
+        <code>
+          <pre>
+            $("#show").click(function(){
+            
+              $("p").show();
+              
+            });
+        </pre>
+        </code>
+      </div>
+    </section>
+     <!--User Story #2-->
+     <!--User Story #4-->
+    <section class="main-section" id="jQuery_HTML_Reference">
+      <header>jquery HTML Reference</header>
+      <div class="jQuery_HTML_Reference">
+        <p>Three simple, but useful, jQuery methods for DOM manipulation are:</p>
+        <ul>
+          <li>text() - Sets or returns the text content of selected elements</li>
+          <li>html() - Sets or returns the content of selected elements (including HTML markup)</li>
+          <li>val() - Sets or returns the value of form fields</li>
+        </ul>
+        <h3>jQuery text()</h3>
+        <p>The following example demonstrates how to get content with the jQuery text() methods:</p>
+         <!--User Story #6-->
+        <code>
+          <pre>
+            $("#btn1").click(function(){
+            
+              alert("Text: " + $("#test").text());
+              
+            });
+        </pre>
+        </code>
+        <h3>jquery html()</h3>
+        <p>The following example demonstrates how to get content with the jQuery html() methods:</p>
+         <!--User Story #6-->
+        <code>
+          <pre>
+            $("#btn1").click(function(){
+            
+              alert("HTML: " + $("#test").html());
+              
+            });
+        </pre>
+        </code>
+        <h3>jquery val()</h3>
+        <p>The following example demonstrates how to get content with the jQuery val() methods:</p>
+         <!--User Story #6-->
+        <code>
+          <pre>
+            $("#btn1").click(function(){
+            
+              alert("Value: " + $("#test").val());
+              
+            });
+        </pre>
+        </code>
+      </div>
+    </section>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  </main>
+</div>
+
+
+
+</body>
+</html>

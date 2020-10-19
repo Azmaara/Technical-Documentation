@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    box-sizing: border-box;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient(
+        115deg,
+        rgba(208, 243, 194, 0.8),
+        rgba(215, 215, 241, 0.7)
+      ),
+      url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .container {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    
+  }
+  li{
+    margin: 5px;
+  }
+  #navbar{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    float: left;
+    background-color: #72a379;
+    overflow: auto;
+    position: fixed;
+  }
+  #navbar header {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    padding: 20px 0;
+  }
+  #top-header{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.4rem;
+  }
+  #navbar .doc-list{
+    list-style: none;
+    background-color: #b0bec5;
+  }
+  .doc-list-item{
+    width: 100%;
+    height: 45px;
+    padding-left: 10px;
+    border-top: 1px solid #333;
+  }
+  .doc-list-item:last-child{
+    border-bottom: 1px solid #333;
+  }
+  .nav-link{
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.05rem;
+    color: #263238;
+  }
+  #main-doc{
+    margin-left: 320px;
+    padding: 15px 10px; 
+  }
+  .main-section{
+    min-height: 180px;
+    padding: 10px 0 20px;
+  }
+  #jQuery_Introduction header, #What_is_jQuery header, #Why_jQuery header, #jQuery_Effects_Reference header,#jQuery_Author header, #jQuery_HTML_Reference header{
+    font-size: 2rem;
+    padding: 0px 0px 10px 20px;
+  }
+  .header-info, .what-is-jquery, .Why_jQuery, .jQuery_Effects_Reference, .jQuery_HTML_Reference{
+    padding: 15px 10px 15px 20px; 
+    position: relative;
+    border-radius: 10px;
+    margin: 0 30px;
+    z-index: 5;
+    background-color: #72a379;
+    color:#0d1d1f;
+  }
+  .header-info::before, .what-is-jquery::before, .Why_jQuery::before, .jQuery_Effects_Reference::before,.jQuery_Author::before, .jQuery_HTML_Reference::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0px;
+    box-sizing: border-box;
+    border-left-width: 5px;
+    border-left-style: solid;
+    border-left-color: #006064;
+    border-radius: 10px;
+  }
+  .header-info p, .what-is-jquery p, .jQuery_Author p, .Why_jQuery p, .jQuery_Effects_Reference p, .jQuery_HTML_Reference p{
+    font-size: 17px;
+    line-height: 25px;
+  }
+  .header-info h3, .jQuery_Effects_Reference h3,  .jQuery_HTML_Reference h3{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .what-is-jquery ul, .Why_jQuery ul, .jQuery_HTML_Reference ul{
+    list-style-type: start;
+    margin-left: 20px;
+    padding-top: 10px;
+  }
+  
+  code pre {
+    max-width: 480px;
+    width: 100%;
+    background-color: #c2edb9;
+    color: #000;
+    padding: 15px 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  @media screen and (max-width: 810px) {
+    #navbar{
+      height: 110px;
+      width: 100%;
+      z-index: 10;
+      top: 0;
+    }
+
+      
+    .doc-list{
+      display: flex;
+      flex-direction: row;
+      overflow: auto;
+    }
+    #main-doc{
+      margin-left: 0;
+      margin-top: 110px;
+    }
+  }
+
+  #navbar li a:hover {
+    background-color: #ecee7a;
+    color: rgb(219, 8, 219);
+  }
+
+  #navbar a {
+   
+    padding: 2px 2px;
+    color: #021fac;
+    text-decoration:none ;
+    cursor: pointer;
+  }
+
+  #myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none;
+    outline: none; 
+    background-color: #126d06; 
+    color: white; 
+    cursor: pointer; 
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px; 
+}
+
+#myBtn:hover {
+    background-color: #ff99ff; 
+}
